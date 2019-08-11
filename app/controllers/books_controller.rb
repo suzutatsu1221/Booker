@@ -1,18 +1,12 @@
 class BooksController < ApplicationController
-  
   def top
   end
-
-  def new
+def index
+  	@posts = Book.all
   	@book = Book.new
-  end
-
+end
   def show
   end
-
-  def index
-  end
-
-  def edit
+def edit
   end
 end
